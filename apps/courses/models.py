@@ -14,7 +14,7 @@ class Course(TimeStampedModel):
         editable=False,
     )
     name = models.CharField(
-        _("full name"),
+        _("name"),
         max_length=255,
     )
     description = models.TextField(
