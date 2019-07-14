@@ -12,7 +12,7 @@ from .serializers import CourseSerializer
 
 class ListCoursesAPIView(generics.ListAPIView):
     serializer_class = CourseSerializer
-    queryset = Course.objects.all().participators_count()
+    queryset = Course.objects.all().participators_count().order_by('-created')
 
 
 class ReadUpdateDeleteCoursesAPIView(generics.RetrieveUpdateDestroyAPIView):
