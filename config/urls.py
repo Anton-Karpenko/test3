@@ -8,7 +8,7 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
    openapi.Info(
-      title="Scoutbe test app API",
+      title="Test app API",
       default_version='v1',
       description="API for menu",
       terms_of_service="https://www.example.com/",
